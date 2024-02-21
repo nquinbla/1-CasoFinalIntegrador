@@ -1,8 +1,11 @@
 import java.util.Scanner;
+import java.util.Set;
 
 public class ComunicadorInterplanetario {
+    private static final Set<Character> VOCALES = Set.of('a', 'e', 'i', 'o', 'u');
 
     public static void main(String[] args) {
+        ComunicadorInterplanetario comunicador = new ComunicadorInterplanetario();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Bienvenido al Comunicador Interplanetario");
@@ -11,51 +14,29 @@ public class ComunicadorInterplanetario {
         String mensaje = scanner.nextLine();
 
         // Funciones del comunicador
-        contarVocales(mensaje);
-        invertirMensaje(mensaje);
-        verificarPalindromo(mensaje);
+        comunicador.contarVocales(mensaje);
+        comunicador.invertirMensaje(mensaje);
+        comunicador.verificarPalindromo(mensaje);
 
         scanner.close();
     }
 
-    public static void contarVocales(String mensaje) {
-        int contadorA = 0, contadorE = 0, contadorI = 0, contadorO = 0, contadorU = 0;
-
+    public void contarVocales(String mensaje) {
+        int contador = 0;
         for (char letra : mensaje.toLowerCase().toCharArray()) {
-            switch (letra) {
-                case 'a':
-                    contadorA++;
-                    break;
-                case 'e':
-                    contadorE++;
-                    break;
-                case 'i':
-                    contadorI++;
-                    break;
-                case 'o':
-                    contadorO++;
-                    break;
-                case 'u':
-                    contadorU++;
-                    break;
+            if (VOCALES.contains(letra)) {
+                contador++;
             }
         }
-
-        int totalVocales = contadorA + contadorE + contadorI + contadorO + contadorU;
-        System.out.println("El mensaje contiene un total de " + totalVocales + " vocales:");
-        System.out.println(" - A: " + contadorA);
-        System.out.println(" - E: " + contadorE);
-        System.out.println(" - I: " + contadorI);
-        System.out.println(" - O: " + contadorO);
-        System.out.println(" - U: " + contadorU);
+        System.out.println("El mensaje contiene un total de " + contador + " vocales.");
     }
 
-    public static void invertirMensaje(String mensaje) {
+    public void invertirMensaje(String mensaje) {
         StringBuilder mensajeInvertido = new StringBuilder(mensaje).reverse();
         System.out.println("Mensaje invertido: " + mensajeInvertido);
     }
 
-    public static void verificarPalindromo(String mensaje) {
+    public void verificarPalindromo(String mensaje) {
         String mensajeSinEspacios = mensaje.replaceAll("\\s", "").toLowerCase();
         String mensajeInvertido = new StringBuilder(mensajeSinEspacios).reverse().toString();
 

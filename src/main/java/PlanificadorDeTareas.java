@@ -34,12 +34,6 @@ public class PlanificadorDeTareas {
         }
     }
 
-    public void ajustarTareasEnTiempoReal() {
-        // Implementar ajustes en tiempo real basados en el rendimiento y disponibilidad de la tripulación
-        // Por ejemplo, redistribuir tareas si un miembro se vuelve disponible o su rendimiento cambia
-        // Aquí se puede implementar un algoritmo de optimización para balancear la carga de trabajo
-    }
-
     public static void main(String[] args) {
         PlanificadorDeTareas planificador = new PlanificadorDeTareas();
 
