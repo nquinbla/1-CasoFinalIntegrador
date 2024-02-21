@@ -16,16 +16,13 @@ public class RecursosYSuministros {
 
         double[] proyeccionAgua = calcularProyeccionDeRecursos(nivelAgua, 5); // Proyección para los próximos 5 días
         double[] proyeccionAlimentos = calcularProyeccionDeRecursos(nivelAlimentos, 5);
-        double[] proyeccionOxigeno = calcularProyeccionDeOxigeno(nivelOxigeno, 5);
+        double[] proyeccionOxigeno = calcularProyeccionDeRecursos(nivelOxigeno, 5);
 
         verificarNivelesSeguros(proyeccionAgua, proyeccionAlimentos, proyeccionOxigeno);
 
         mostrarEstadisticas(proyeccionAgua, proyeccionAlimentos , proyeccionOxigeno);
 
         scanner.close();
-    }
-
-    private static double[] calcularProyeccionDeOxigeno(double nivelOxigeno, int i) {
     }
 
     private static double[] calcularProyeccionDeRecursos(double nivelInicial, int dias) {
@@ -53,16 +50,16 @@ public class RecursosYSuministros {
             }
             if (proyeccionOxigeno[i] < umbralOxigeno) {
                 System.out.println("¡Alerta! Nivel de oxígeno bajo el umbral seguro en el día " + (i + 1));
+            }
         }
     }
 
     private static void mostrarEstadisticas(double[] proyeccionAgua, double[] proyeccionAlimentos, double[] proyeccionOxigeno) {
         System.out.println("\nEstadísticas de uso de recursos:");
-        System.out.println("Día\tAgua\tOxígeno (litros)\tAlimentos (kg\tOxígeno");
+        System.out.println("Día\tAgua (litros)\tAlimentos (kg)\tOxígeno (O2)");
 
         for (int i = 0; i < proyeccionAgua.length; i++) {
             System.out.println((i + 1) + "\t" + proyeccionAgua[i] + "\t\t" + proyeccionAlimentos[i] + "\t\t" + proyeccionOxigeno[i]);
         }
     }
 }
-
