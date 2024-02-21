@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class CronómetroCósmico {
 
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Bienvenido al Cronómetro Cósmico");
