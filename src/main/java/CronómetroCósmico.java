@@ -16,6 +16,10 @@ public class CronómetroCósmico {
         return resultado;
     }
 
-
-
+    public String visualizarTiempo(double tiempo, boolean esCicloDiario) {
+        int unidades = esCicloDiario ? (int) (tiempo % cicloDiarioPlaneta) : (int) (tiempo % cicloAnualPlaneta);
+        int subunidades = (int) ((tiempo % 1) * (esCicloDiario ? 60 : cicloDiarioPlaneta));
+        return String.format("%d unidades, %d subunidades", unidades, subunidades);
+    }
 }
+
