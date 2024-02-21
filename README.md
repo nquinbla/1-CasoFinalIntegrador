@@ -1,4 +1,4 @@
-# CasoFinalIntegrador1
+# CasoFinalIntegradorTEMA1
 Caso final integrador del tema 1 (21/02/2024)
 
 link: https://github.com/nquinbla/CasoFinalIntegrador1.git
