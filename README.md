@@ -1,7 +1,7 @@
 # CasoFinalIntegradorTEMA1
-Caso final integrador de la Unidad 1 (21/02/2024)
+Caso final integrador de la Unidad 1 de Nerea Quintanilla Blanco (Clase del 21/02/2024)
 
-link: https://github.com/nquinbla/CasoFinalIntegrador1.git
+LINK: https://github.com/nquinbla/CasoFinalIntegrador1.git
 
 Para este proyecto, los diversos ejercicios los encontrará en src/main/java/"NombredelEjercicio" y los test en src/main/java/"NombredelEjercicioTest". 
 
