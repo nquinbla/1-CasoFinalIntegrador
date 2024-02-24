@@ -64,4 +64,8 @@ public class RecursosYSuministros {
             System.out.println((i + 1) + "\t" + proyeccionAgua[i] + "\t\t" + proyeccionAlimentos[i] + "\t\t" + proyeccionOxigeno[i]);
         }
     }
+
+    public String comunicar() {
+        return "Hola, soy un recurso y suministro";
+    }
 }

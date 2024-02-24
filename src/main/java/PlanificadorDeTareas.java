@@ -57,6 +57,10 @@ public class PlanificadorDeTareas {
         planificador.distribuirTareas(tareas);
         planificador.mostrarHorarios();
     }
+
+    public String planificar() {
+        return "Hola, soy un planificador de tareas";
+    }
 }
 
 // Creamos una clase para los miembros de la tripulación
@@ -104,3 +108,4 @@ class Tarea {
         return duracion;
     }
 }
+

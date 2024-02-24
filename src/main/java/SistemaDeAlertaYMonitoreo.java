@@ -118,4 +118,8 @@ public class SistemaDeAlertaYMonitoreo {
 
         scanner.close();
     }
+
+    public String alertar() {
+        return "Alerta";
+    }
 }
