@@ -43,5 +43,9 @@ public class NavegadorEstelar {
         navegador.planificarRuta();
         navegador.planificarConstrucciones();
     }
+
+    public String comunicar() {
+        return "Hola, soy un navegador estelar";
+    }
 }
 
