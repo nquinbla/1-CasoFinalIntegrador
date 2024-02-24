@@ -53,5 +53,9 @@ public class CronómetroCósmico {
     public String cronómetroCósmico() {
         return "Hola, soy un cronómetro cósmico";
     }
+
+    public String alertar() {
+        return "Alerta";
+    }
 }
 

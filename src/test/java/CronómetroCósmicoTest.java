@@ -9,6 +9,6 @@ public class CronómetroCósmicoTest {
         // Asegúrate de que el método cronómetroCósmico() exista en la clase CronómetroCósmico
         assertEquals("Hola, soy un cronómetro cósmico", cronómetroCósmico.cronómetroCósmico());
     }
+
+
 }
-
-
