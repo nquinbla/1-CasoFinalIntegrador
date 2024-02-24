@@ -49,5 +49,9 @@ public class CronómetroCósmico {
     private static void identificarLimitesDeDatos() {
         // Implementar la lógica aquí
     }
+
+    public String cronómetroCósmico() {
+        return "Hola, soy un cronómetro cósmico";
+    }
 }
 
