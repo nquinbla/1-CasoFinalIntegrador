@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class CronómetroCósmico {
+public class prueba {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -50,4 +50,3 @@ public class CronómetroCósmico {
         // Implementar la lógica aquí
     }
 }
-
