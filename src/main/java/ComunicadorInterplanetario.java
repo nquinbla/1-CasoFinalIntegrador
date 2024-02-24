@@ -46,4 +46,8 @@ public class ComunicadorInterplanetario {
             System.out.println("El mensaje no es un palíndromo.");
         }
     }
+
+    public String comunicar() {
+        return "Hola, soy un comunicador interplanetario";
+    }
 }
