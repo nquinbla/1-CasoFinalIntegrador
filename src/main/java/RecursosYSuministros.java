@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// Como resultado, el programa deberá mostrar las estadísticas de uso de recursos, y alertar si alguno de los recursos está por debajo de un umbral seguro.
+
 public class RecursosYSuministros {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

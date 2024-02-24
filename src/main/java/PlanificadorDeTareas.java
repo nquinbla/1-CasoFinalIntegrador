@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// Creamos distntas clases para poder separar las responsabilidades :)
+
+
+// Creamos una clase para el planificador de tareas
+
 public class PlanificadorDeTareas {
     private List<MiembroTripulacion> tripulacion;
 
@@ -54,6 +59,8 @@ public class PlanificadorDeTareas {
     }
 }
 
+// Creamos una clase para los miembros de la tripulación
+
 class MiembroTripulacion {
     private String nombre;
     private List<Tarea> tareas;
@@ -77,6 +84,8 @@ class MiembroTripulacion {
         return nombre;
     }
 }
+
+// Creamos una clase para las tareas
 
 class Tarea {
     private String nombre;
